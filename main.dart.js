@@ -42612,7 +42612,7 @@ a9(){return new A.U1(B.j)}}
 A.U1.prototype={
 ap(){this.aK()
 A.asO().aE(new A.ao7(this),t.P)},
-J(a){var s,r="Flutter Admin Panel",q=null
+J(a){var s,r="smoothsoftwares",q=null
 if($.at1){s=A.aib(B.aq,q).Pe(B.c4,B.eF,A.azd(A.a7(a).RG).Os(B.l))
 return A.azD(!1,A.aKw(new A.Az(q),A.a([new A.y6(new A.vW(new A.ao4(),q,q,q,A.aRD(),A.aQr(),t.OC),q,q,q,q,t.eN)],t.Ds)),s,r)}else return A.azD(!1,new A.Av(q),A.aib(B.aq,q).Pe(B.c4,B.eF,A.azd(A.a7(a).RG).Os(B.l)),r)},
 n(){A.Py()
