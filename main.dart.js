@@ -8879,7 +8879,7 @@ o=A.JG(A.cQ(A.a([new A.cU(B.R,A.aX(o,p,p,p,p,p,p),p)],s),B.v,B.q,p))
 r=b.b
 r.toString
 r=A.a([o,A.JG(A.aX(r,p,p,p,p,p,p))],t.sa)
-o=a===1
+o=a===0
 if(o){q=b.d
 q.toString
 r.push(A.JG(A.aX(A.aBo(q),p,p,p,p,p,p)))}if(!o){q=b.w
@@ -8899,11 +8899,9 @@ this.b=b},
 aj_:function aj_(a,b){this.a=a
 this.b=b},
 aiZ:function aiZ(a){this.a=a},
-aj0:function aj0(a,b){this.a=a
+aj0:function aj0(a){this.a=a},
+aj1:function aj1(a,b){this.a=a
 this.b=b},
-aj1:function aj1(a,b,c){this.a=a
-this.b=b
-this.c=c},
 aiY:function aiY(a,b){this.a=a
 this.b=b},
 aj2:function aj2(){},
@@ -43079,7 +43077,7 @@ A.Lh.prototype={}
 A.pw.prototype={
 J(a){var s=null,r=A.a([],t.p),q=t.w
 if(!(a.I(q).f.a.a>=1100))r.push(A.LG(s,A.a7K(B.G3,s),A.uu(a,!1,t.Jd).gacE(),s))
-if(!(a.I(q).f.a.a<850))r.push(A.aX("Dashboard",s,s,s,s,s,s))
+if(!(a.I(q).f.a.a<850))r.push(A.aX("",s,s,s,s,s,s))
 return A.cQ(r,B.v,B.q,s)}}
 A.Au.prototype={
 vS(a,b){return this.abr(a,b)},
@@ -43179,7 +43177,7 @@ A.Dy.prototype={
 m0(a){return this.TE(a)},
 TE(a){var s=0,r=A.S(t.H),q=this,p,o,n,m
 var $async$m0=A.T(function(b,c){if(b===1)return A.P(c,r)
-while(true)switch(s){case 0:switch(a){case 1:p="User"
+while(true)switch(s){case 0:switch(a){case 0:p="User"
 break
 case 2:p="CoAdmin"
 break
@@ -43267,7 +43265,7 @@ q.Q.sb4(0,"")
 q.as.sb4(0,"")
 q.at.sb4(0,"")
 m.sb4(0,"")
-q.m0(1)}return A.Q(null,r)}})
+q.m0(0)}return A.Q(null,r)}})
 return A.R($async$wH,r)},
 tU(a,b){return this.TO(a,b)},
 TO(a,b){var s=0,r=A.S(t.H),q=this,p,o,n
@@ -43308,7 +43306,7 @@ l=s.d=new A.Dy(n,new A.ey(B.an,m),new A.ey(B.an,m),new A.ey(B.an,m),new A.ey(B.a
 o.a=q
 l.ch="-"
 n=s.c
-if(n===1)m=o.a="User"
+if(n===0)m=o.a="User"
 else if(n===2){o.a=p
 m=p}else m=q
 l.m0(n)
@@ -43316,25 +43314,25 @@ n=s.d
 if(n!=null)n.ay.sb4(0,m)
 return A.aM(r,A.mN(s.d,new A.aj2(),new A.aj3(o,s),new A.aj4(),t.Co,t.X),B.i,r,r,new A.cl(B.c4,r,r,B.ew,r,r,B.a_),r,r,r,new A.ao(14,14,14,14),r,r,r)}}
 A.aj3.prototype={
-$2(a,b){var s,r,q,p,o,n,m,l,k,j=null
+$2(a,b){var s,r,q,p,o,n,m,l,k,j,i=null
 if(b instanceof A.DB){s=t.p
-r=A.a([A.aX(this.a.a+" Management",j,j,j,A.a7(a).RG.w,j,j),A.dL(A.aM(j,j,B.i,j,j,j,j,j,j,j,j,j,j),1)],s)
+r=A.a([A.aX(this.a.a+" Management",i,i,i,A.a7(a).RG.w,i,i),A.dL(A.aM(i,i,B.i,i,i,i,i,i,i,i,i,i,i),1)],s)
 q=this.b
 p=q.c
-if(p!==2)r.push(A.auY(A.aX("Add New",j,j,j,j,j,j),new A.aj_(q,a),j))
-r=A.cQ(r,B.v,B.q,j)
-o=A.b6(j,12,j)
-n=A.a([new A.hV(A.aX("Detail",j,j,j,j,j,j)),new A.hV(A.aX("User Name",j,j,j,j,j,j))],t.UR)
-p=p===1
-if(p)n.push(new A.hV(A.aX("Validity",j,j,j,j,j,j)))
-if(!p)n.push(new A.hV(A.aX("Event Name",j,j,j,j,j,j)))
-n.push(new A.hV(A.aX("Actions",j,j,j,j,j,j)))
-p=b.a
-m=p.length
-l=J.a86(m,t.VZ)
-for(k=0;k<m;++k)l[k]=A.aSr(k,p[k],new A.aj0(q,k),new A.aj1(q,a,k))
-return A.d8(A.a([r,o,A.b6(A.ayM(14,n,600,l),j,1/0)],s),B.aH,B.M,B.q)}else{s=a.I(t.w).f
-return A.aM(j,A.aM(j,A.dK(A.t3(),j,j),B.i,j,j,j,j,j,j,j,j,j,j),B.i,j,j,j,j,s.a.b/1.2,j,j,j,j,j)}},
+if(p!==2)r.push(A.auY(A.aX("Add New",i,i,i,i,i,i),new A.aj_(q,a),i))
+r=A.cQ(r,B.v,B.q,i)
+o=A.b6(i,12,i)
+n=A.a([new A.hV(A.aX("Detail",i,i,i,i,i,i)),new A.hV(A.aX("User Name",i,i,i,i,i,i))],t.UR)
+m=p===0
+if(m)n.push(new A.hV(A.aX("Validity",i,i,i,i,i,i)))
+if(!m)n.push(new A.hV(A.aX("Event Name",i,i,i,i,i,i)))
+n.push(new A.hV(A.aX("Actions",i,i,i,i,i,i)))
+m=b.a
+l=m.length
+k=J.a86(l,t.VZ)
+for(j=0;j<l;++j)k[j]=A.aSr(p,m[j],new A.aj0(q),new A.aj1(q,a))
+return A.d8(A.a([r,o,A.b6(A.ayM(14,n,600,k),i,1/0)],s),B.aH,B.M,B.q)}else{s=a.I(t.w).f
+return A.aM(i,A.aM(i,A.dK(A.t3(),i,i),B.i,i,i,i,i,i,i,i,i,i,i),B.i,i,i,i,i,s.a.b/1.2,i,i,i,i,i)}},
 $S:139}
 A.aj_.prototype={
 $0(){var s=this.a,r=s.d
@@ -43346,8 +43344,8 @@ $0(){var s=this.a,r=s.d
 if(r!=null)r.vQ(s.c)},
 $S:8}
 A.aj0.prototype={
-$1(a){var s=this.a.d
-if(s!=null)s.wq(this.b,a)},
+$1(a){var s=this.a,r=s.d
+if(r!=null)r.wq(s.c,a)},
 $S:93}
 A.aj1.prototype={
 $1(a){var s=this.a,r=s.d.Q,q=a.a
@@ -43361,7 +43359,7 @@ s.d.at.sb4(0,J.c_(a.c))
 s.d.ax.sb4(0,A.aBo(A.dW(J.c_(a.d),null)))
 r=s.d
 r.toString
-A.aDZ(this.b,!0,this.c,r,new A.aiY(s,a))},
+A.aDZ(this.b,!0,s.c,r,new A.aiY(s,a))},
 $S:350}
 A.aiY.prototype={
 $0(){var s,r=this.a.d
@@ -43465,11 +43463,11 @@ a9(){return new A.Xx(B.j)}}
 A.Xx.prototype={
 J(a){var s=null,r=A.b6(s,14,s),q=t.p,p=A.a([A.b6(s,14,s),new A.QC(this.a.c,s)],q),o=t.w
 if(a.I(o).f.a.a<850)p.push(A.b6(s,14,s))
-p=A.a([A.dL(A.d8(p,B.v,B.M,B.q),5)],q)
+p=A.a([A.dL(A.d8(p,B.v,B.M,B.q),1)],q)
 if(!(a.I(o).f.a.a<850))p.push(A.b6(s,s,14))
 return A.qi(!0,A.CD(A.d8(A.a([new A.pw(s),r,A.cQ(p,B.aH,B.q,s)],q),B.v,B.M,B.q),s,new A.ao(14,14,14,14),!1,B.Z),B.R,!0)}}
 A.CA.prototype={
-J(a){var s=this,r=null,q="assets/icons/menu_profile.svg",p="assets/icons/menu_setting.svg",o=A.aAS(A.a([new A.Ku(A.dK(A.aX("Smooth Softwares",r,r,r,A.a7(a).RG.r,r,r),r,r),r),new A.jK("Dashboard","assets/icons/menu_dashbord.svg",new A.aeC(s),r),new A.jK("Users",q,new A.aeD(s),r),new A.jK("CoAdmin",q,new A.aeE(s),r),new A.jK("Supervisor",q,new A.aeF(s),r),new A.jK("Event",q,new A.aeG(s),r),new A.jK("App Update",p,new A.aeH(s),r),new A.jK("Logout",p,new A.aeI(s),r)],t.p),!0,!0,!0),n=!0
+J(a){var s=this,r=null,q="assets/icons/menu_profile.svg",p="assets/icons/menu_setting.svg",o=A.aAS(A.a([new A.Ku(A.dK(A.aX("Smooth Softwares",r,r,r,A.a7(a).RG.r,r,r),r,r),r),new A.jK("Users",q,new A.aeC(s),r),new A.jK("Active Users","assets/icons/menu_dashbord.svg",new A.aeD(s),r),new A.jK("CoAdmin",q,new A.aeE(s),r),new A.jK("Supervisor",q,new A.aeF(s),r),new A.jK("Event",q,new A.aeG(s),r),new A.jK("App Update",p,new A.aeH(s),r),new A.jK("Logout",p,new A.aeI(s),r)],t.p),!0,!0,!0),n=!0
 n=n?B.mD:r
 return new A.Ks(new A.Ap(o,r,B.Z,!1,r,r,n,!1,r,8,B.aa,B.fu,r,B.C,r),r)}}
 A.aeC.prototype={
@@ -43505,8 +43503,8 @@ if(a.I(t.w).f.a.a>=1100)p.push(A.dL(new A.CA(new A.any(s,a),r),1))
 p.push(A.dL(s.Tl(s.d),5))
 return A.aAG(r,A.qi(!0,A.cQ(p,B.aH,B.q,r),B.R,!0),new A.CA(new A.anz(s,a),r),q)},
 Tl(a){var s=null
-switch(a){case 0:return new A.yA(s)
-case 1:return new A.qT(1,s)
+switch(a){case 1:return new A.yA(s)
+case 0:return new A.qT(0,s)
 case 2:return new A.qT(2,s)
 case 3:return new A.qT(3,s)
 case 4:return new A.KN(s)
