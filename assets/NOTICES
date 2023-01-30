@@ -15437,9 +15437,8 @@ path_provider
 path_provider_windows
 shared_preferences
 shared_preferences_android
-shared_preferences_ios
+shared_preferences_foundation
 shared_preferences_linux
-shared_preferences_macos
 shared_preferences_web
 shared_preferences_windows
 
