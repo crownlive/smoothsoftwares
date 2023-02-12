@@ -8771,6 +8771,7 @@ w7:function w7(a,b){this.a=a
 this.b=b},
 xV:function xV(a,b,c,d,e,f,g,h,i,j){var _=this
 _.z=a
+_.Q=null
 _.as=b
 _.at=c
 _.ax=d
@@ -8793,7 +8794,8 @@ switch(a){case 1:break
 case 2:q=$.aH1()
 break
 case 3:q=$.aH9()
-break}if(b!=null){s=b.b
+break}q.Q=b
+if(b!=null){s=b.b
 q.as.saG(0,s)
 s=b.c
 q.at.saG(0,s)
@@ -43244,11 +43246,12 @@ if(p===1){q.cx=B.mg
 s="User"}else if(p===2){q.cx=B.TZ
 s="Co-Admin"}else s="Supervisor"
 q.CW.saG(0,s)
-switch(p){case 1:r="Add User"
+if(q.Q==null)switch(p){case 1:r="Add User"
 break
 case 3:r="Add Supervisor"
 break
-default:r=""}return r},
+default:r=""}else r="Edit User"
+return r},
 w4(){var s=0,r=A.O(t.z),q=this,p,o,n,m,l,k
 var $async$w4=A.P(function(a,b){if(a===1)return A.L(b,r)
 while(true)switch(s){case 0:s=q.Oq()?2:3
@@ -43276,11 +43279,14 @@ break
 case 2:p=q.cy
 o=q.ch
 n=o.a.a
-m=t.z
-l=A.A4(A.aG(["validity_long",p,"id","","note",n],t.N,m))
+m=q.Q
+m=m==null?null:m.a
+if(m==null)m=""
+l=t.z
+k=A.A4(A.aG(["validity_long",p,"id",m,"note",n],t.N,l))
 q.aF(new A.ta())
-k=q.r.a
-m=k.pt(0,"user",null,l,null,null,A.a2D("PUT",null),null,m)
+m=q.r.a
+m=m.pt(0,"user",null,k,null,null,A.a2D("PUT",null),null,l)
 s=4
 return A.V(q.ek(m,new A.a_A(q)),$async$wV)
 case 4:if(b!=null){q.aF(new A.tb())
@@ -43311,7 +43317,7 @@ return A.N($async$w2,r)},
 Oq(){var s=this
 if(s.as.a.a.length===0){s.aF(new A.fN("Please enter name"))
 return!1}if(s.at.a.a.length===0){s.aF(new A.fN("Please enter user name"))
-return!1}if(s.ax.a.a.length===0&&!0){s.aF(new A.fN("Please enter password"))
+return!1}if(s.ax.a.a.length===0&&s.Q==null){s.aF(new A.fN("Please enter password"))
 return!1}if(s.ay.a.a.length===0){s.aF(new A.fN("Please select validity date"))
 return!1}if(s.ch.a.a.length===0){s.aF(new A.fN("Please enter some note"))
 return!1}return!0},
@@ -43390,11 +43396,12 @@ f=A.b4(b,16,b)
 e=A.yl(new A.bV(40,40))
 s=a.J(s).f
 d=p.a.e
-switch(d.z){case 1:c="Add User"
+if(d.Q==null)switch(d.z){case 1:c="Add User"
 break
 case 3:c="Add Supervisor"
 break
-default:c=""}return new A.cF(B.FN,A.aF(b,A.ky(A.d7(A.a([r,q,m,l,k,j,i,o,h,g,n,f,A.aF(b,A.Bh(A.aZ(c,b,b,b,b,b,b),B.cU,new A.aky(p),B.l),B.i,b,b,new A.cf(b,b,b,e,b,b,B.V),b,40,new A.an(0,20,0,20),b,b,b,s.a.a)],t.p),B.w,B.M,B.q),b,b,b,B.L),B.i,b,b,new A.cf(B.bp,b,b,B.cy,b,b,B.V),b,b,b,new A.an(14,14,14,14),b,b,b),b)}},
+default:c=""}else c="Edit User"
+return new A.cF(B.FN,A.aF(b,A.ky(A.d7(A.a([r,q,m,l,k,j,i,o,h,g,n,f,A.aF(b,A.Bh(A.aZ(c,b,b,b,b,b,b),B.cU,new A.aky(p),B.l),B.i,b,b,new A.cf(b,b,b,e,b,b,B.V),b,40,new A.an(0,20,0,20),b,b,b,s.a.a)],t.p),B.w,B.M,B.q),b,b,b,B.L),B.i,b,b,new A.cf(B.bp,b,b,B.cy,b,b,B.V),b,b,b,new A.an(14,14,14,14),b,b,b),b)}},
 $S:69}
 A.akx.prototype={
 $0(){var s=0,r=A.O(t.P),q=this,p
