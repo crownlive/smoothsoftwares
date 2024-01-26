@@ -24607,7 +24607,7 @@ Dy(a){var s=0,r=A.O(t.H),q
 var $async$Dy=A.P(function(b,c){if(b===1)return A.L(c,r)
 while(true)switch(s){case 0:s=2
 return A.V(A.kE(),$async$Dy)
-case 2:if($.Qg==null){q="wss://smoothsoftwares.link/s_connect/"+a
+case 2:if($.Qg==null){q="wss://api.tj365.cloud/s_connect/"+a
 A.hl("Socket-> "+q)
 $.Qg=A.aLa(A.rl(q,0,null),null)}return A.M(null,r)}})
 return A.N($async$Dy,r)},
@@ -44171,7 +44171,7 @@ j(a){var s=this.a
 return s==null?A.rj("something_wrong"):s},
 $ibH:1}
 A.a31.prototype={
-Zy(){var s=this,r=null,q=A.aJ1("https://smoothsoftwares.link/",12e4,12e4),p=new A.a2C($,new A.Mu(A.a([],t.lC),new A.B9(),new A.B9(),new A.B9()),$,new A.a2s(),!1)
+Zy(){var s=this,r=null,q=A.aJ1("https://api.tj365.cloud/",12e4,12e4),p=new A.a2C($,new A.Mu(A.a([],t.lC),new A.B9(),new A.B9(),new A.B9()),$,new A.a2s(),!1)
 p.EK$=q
 p.QC$=new A.a0o(A.aR(t.Gf))
 s.a=p
